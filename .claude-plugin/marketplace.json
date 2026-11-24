@@ -1,0 +1,14 @@
+{
+  "name": "claude-code-mod-projects-view",
+  "description": "The AI UNLOCKED projects and chats pane for Claude Code.",
+  "owner": {
+    "name": "AI Unlocked"
+  },
+  "plugins": [
+    {
+      "name": "projects-view",
+      "source": "./",
+      "description": "A pane of your projects and chats: running and waiting chats, favorites, pins, row colors, sorting, Thai and English, and a toggle above the prompt (/projects)."
+    }
+  ]
+}

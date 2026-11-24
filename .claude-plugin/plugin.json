@@ -1,0 +1,9 @@
+{
+  "name": "projects-view",
+  "version": "0.1.0",
+  "description": "AI UNLOCKED pane: your projects and chats, working and waiting chats, favorites, pins, row colors, sorting, Thai and English (/projects).",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "AI Unlocked"
+  }
+}
