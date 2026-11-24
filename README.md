@@ -63,3 +63,11 @@ After installing, start a new chat or run `/reload-plugins` in an open one.
 ```
 claude plugin uninstall projects-view
 ```
+
+## Credits
+
+Made by **AI UNLOCKED**
+
+- 🌐 Website: [aiunlock.co](https://aiunlock.co)
+- ▶️ YouTube: [@AIUnlocked168](https://www.youtube.com/@AIUnlocked168)
+- 📘 Facebook: [AI Unlocked](https://www.facebook.com/aiunlockedvip)

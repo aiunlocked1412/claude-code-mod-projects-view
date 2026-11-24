@@ -64,6 +64,7 @@ const th = {
   sectionPinned: '📌 ปักหมุด',
   thisChat: '📍 คุณอยู่ที่แชทนี้',
   youAreHere: '📍 คุณอยู่ที่นี่',
+  madeBy: 'สร้างโดย AI UNLOCKED',
 }
 
 export type Text = typeof th
@@ -130,6 +131,7 @@ const en: Text = {
   sectionPinned: '📌 Pinned',
   thisChat: '📍 you are here',
   youAreHere: '📍 you are here',
+  madeBy: 'Made by AI UNLOCKED',
 }
 
 export const TEXT: Record<Lang, Text> = { th, en }

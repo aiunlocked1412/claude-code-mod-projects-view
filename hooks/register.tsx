@@ -58,6 +58,12 @@ const isSettingsOpen = atom(
 // The pane's own words for what the loaders store (they stay language-free).
 const UNTITLED = '(ไม่มีชื่อ)'
 const ICON_SETTINGS = '⚙️'
+// Who made this mod, shown at the foot of the settings page.
+const CREDITS = [
+  { label: '🌐 aiunlock.co', href: 'https://aiunlock.co' },
+  { label: '▶️ YouTube', href: 'https://www.youtube.com/%40AIUnlocked168' },
+  { label: '📘 Facebook', href: 'https://www.facebook.com/aiunlockedvip' },
+]
 // The color that marks where the person is now.
 const HERE = '#3b82f6'
 const SECTIONS = ['pinned', 'running', 'waiting', 'recent'] as const
@@ -639,7 +645,7 @@ export const register: Register = on => {
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
-    const { Box, Text, Button, Select } = $.ui.resolve(e)
+    const { Box, Text, Button, Select, Link } = $.ui.resolve(e)
     const snapshot = await read($, data)
     const current: Tab = await read($, tab)
     const isAll = await read($, showAll)
@@ -1014,6 +1020,16 @@ export const register: Register = on => {
           dimColor
           onPress={() => update($, isSettingsOpen, () => false)}
         />
+        <Box flexDirection="column" gap="xs">
+          <Text dimColor size="caption">
+            {L.madeBy}
+          </Text>
+          <Box flexDirection="row" gap="md" flexWrap="wrap">
+            {CREDITS.map(credit => (
+              <Link key={credit.href} href={credit.href} label={credit.label} />
+            ))}
+          </Box>
+        </Box>
       </Box>
     )
 

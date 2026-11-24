@@ -63,3 +63,11 @@ repository นี้เป็น private ติดตั้งได้เฉพ
 ```
 claude plugin uninstall projects-view
 ```
+
+## เครดิต
+
+สร้างโดย **AI UNLOCKED**
+
+- 🌐 เว็บไซต์: [aiunlock.co](https://aiunlock.co)
+- ▶️ YouTube: [@AIUnlocked168](https://www.youtube.com/@AIUnlocked168)
+- 📘 Facebook: [AI Unlocked](https://www.facebook.com/aiunlockedvip)

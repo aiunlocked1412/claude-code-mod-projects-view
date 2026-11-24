@@ -350,6 +350,13 @@ test('settings: language and which sections show', async ($, on) => {
   expect(await ui.find({ type: 'Text', text: /ตั้งค่า/ })).toBeTruthy()
   await ui.press({ key: 'lang:en' })
   expect(await ui.find({ type: 'Text', text: /Settings/ })).toBeTruthy()
+  const links = (await ui.findAll({ type: 'Link' })).map(one => one.props.href)
+  expect(links).toEqual([
+    'https://aiunlock.co',
+    'https://www.youtube.com/%40AIUnlocked168',
+    'https://www.facebook.com/aiunlockedvip',
+  ])
+  expect(await ui.find({ type: 'Text', text: /Made by AI UNLOCKED/ })).toBeTruthy()
 
   // turn the running section off
   await ui.press({ key: 'show:running' })
