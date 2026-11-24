@@ -62,9 +62,6 @@ After a while with Claude Code you have chats everywhere, spread over many proje
 
 ## Install
 
-> [!NOTE]
-> This repository is private. You need an invite to it on GitHub, and a git credential for github.com on your machine: run `gh auth login`, then `gh auth setup-git` (or use an SSH key).
-
 **Claude desktop app**
 
 1. Click **+** next to the prompt box, then **Plugins**

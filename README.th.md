@@ -62,9 +62,6 @@
 
 ## ติดตั้ง
 
-> [!NOTE]
-> repository นี้เป็น private ต้องได้รับเชิญเข้า repo บน GitHub ก่อน และในเครื่องต้องตั้ง GitHub ไว้แล้ว: รัน `gh auth login` แล้วตามด้วย `gh auth setup-git` (หรือใช้ SSH key)
-
 **แอป Claude เดสก์ท็อป**
 
 1. กด **+** ข้างช่องพิมพ์ แล้วเลือก **Plugins**
